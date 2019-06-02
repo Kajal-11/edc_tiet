@@ -1,0 +1,56 @@
+/*********    NavBar  *********/
+
+.navbar{
+    background-color: #dfaf3a;
+    border-style: solid; /*for differentiating purpose during development*/
+}
+
+.row{
+    width: 100%;
+}
+
+.logout{
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logout > a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
+
+/**********   Side Bar Menu  **********/
+
+.menu{
+    text-align: center;
+    padding-top: 4rem;
+    background-color: #dfaf3a;
+    border-style: solid; /*for differentiating purpose during development*/
+}
+
+.profile_links{
+    text-decoration: none;
+}
+
+
+
+/************     Cards      **************/
+
+.card_bottom{
+    background-color: grey;
+}
+
+
+
+/************  Footer Right  **************/
+
+.footer{
+    background-color: #dfaf3a;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-style: solid; /*for differentiating purpose during development*/
+}
