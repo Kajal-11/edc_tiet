@@ -1,4 +1,4 @@
-/*********    NavBar  *********/
+/*********    NavBar   *********/
 
 .navbar{
     background-color: #dfaf3a;
@@ -23,7 +23,7 @@
 
 
 
-/**********   Side Bar Menu  **********/
+/**********    Side Bar Menu   **********/
 
 .menu{
     text-align: center;
@@ -38,11 +38,9 @@
 
 
 
-/************     Cards      **************/
+/************      Cards     **************/
 
-.card_bottom{
-    background-color: grey;
-}
+
 
 
 
