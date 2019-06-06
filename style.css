@@ -72,6 +72,7 @@ body{
 
 .profile_links{
     line-height: 2.5rem;
+    margin-top: 3rem;
 }
 
 .profile_links > a{
@@ -97,6 +98,26 @@ body{
     margin-right: 0.5rem;
     text-decoration: none;
     background-color: #fff;
+}
+
+@media (max-width: 800px){
+    
+    .menu{
+        padding-top: 1rem;
+        background: linear-gradient(to bottom, #6d3b0f, #f1c39a);
+    }
+    .profile_links{
+        margin-top: 1rem;
+    }
+    .menu > a{
+        font-size: 1.1rem;
+    }
+    .menu > .name{
+        font-size: 1.3rem;
+    }
+    .profile_links > a{
+        font-size: 1rem;
+    }
 }
 
 /********  Introduction Heading  *********/
@@ -128,6 +149,18 @@ body{
     font-size: 1.25rem;
     color: #333;
     margin-bottom: 2rem;
+}
+
+@media (max-width:800px){
+    .intro_head{
+        font-size: 1.8rem;
+    }
+    .intro_subhead{
+        font-size: 1.3rem;
+    }
+    .intro_body{
+        font-size: 1rem;
+    }
 }
 
 /************     Startup Cards     **************/
@@ -208,7 +241,7 @@ body{
 
 .subs{
     position: fixed;
-    margin: 3rem 3.5rem 5rem 2rem;
+    margin: 3rem 3.5rem 50rem 2rem;
     border-style: solid;
     border-color: #4d4d4d;
     border-width: 0.05rem;
@@ -257,6 +290,7 @@ body{
     box-shadow: 2px 2px 3px #ccc;
 }
 
+
 /************  Footer Right  **************/
 
 .footer{
@@ -276,11 +310,14 @@ body{
     font-size: 1.1rem;
     text-align: center;
 }
-
+.footer-right{
+    align-content: right;
+}
 .contact1,
 .contact2,
 .contact3{
     color: #d4d4d4;
+    text-align: left;
 }
 
 .footer .fa{
@@ -291,6 +328,7 @@ body{
     border-radius: 30%;
     margin-right: 0.5rem;
     text-decoration: none;
+    margin-top: 0.5rem;
 }
 
 .footer .fa:hover{
@@ -303,4 +341,22 @@ body{
     text-decoration: none;
     background-color: #fff;
     text-shadow: 2px 0px 1.5px #888;
+}
+
+.footer-right{
+    top-margin: 2.5rem;
+}
+
+@media (max-width: 800px){
+    
+    .footer-left{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-right{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
 }
