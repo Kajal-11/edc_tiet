@@ -1,8 +1,18 @@
+/* Font families used-
+font-family: 'Bree Serif', serif;
+font-family: 'Domine', serif;
+font-family: 'Varela Round', sans-serif;*/
+
+body{
+   font-family: 'Bree Serif', serif;
+    background-color: #fcfcfb;    
+}
+
 /*********    NavBar   *********/
 
 .navbar{
-    background-color: #dfaf3a;
-    border-style: solid; /*for differentiating purpose during development*/
+    background-color: rgba(111, 111, 112,0.8);
+    background: linear-gradient(to bottom, rgba(111, 111, 112,0.9), rgba(0,0,0,0));
 }
 
 .row{
@@ -16,39 +26,281 @@
 }
 
 .logout > a{
+    font-size: 1.2rem;
     text-decoration: underline;
-    color: #fff;
+    color: #383328;
 }
 
+.logout > a:hover { 
+    text-shadow: 3px 3px 10px #f5f4f1;
+    font-size: 1.25rem;
+}
 
+.navbar > .navimg:hover{
+    cursor: pointer;         /*not working*/
+}   
 
 
 /**********    Side Bar Menu   **********/
 
 .menu{
     text-align: center;
-    padding-top: 4rem;
-    background-color: #dfaf3a;
-    border-style: solid; /*for differentiating purpose during development*/
+    padding-top: 5rem;
+    background-color: #9a5315;
+    /*background: linear-gradient(to right, #6d3b0f, #f1c39a);*/
+    box-shadow: 1px 1px 3px #f9e7d6;
+    line-height: 2.5rem; 
 }
 
-.profile_links{
+.menu > a{
+    color: #fff;
+    font-size: 1.3rem;
+    border: 0.1rem solid #fff;
+    padding: 0.3rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
     text-decoration: none;
 }
 
+.menu > .name{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: 0.5px 1px 1px #767676;
+} 
 
+.profile_links{
+    line-height: 2.5rem;
+}
 
-/************      Cards     **************/
+.profile_links > a{
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
+    color: #e5e5e5;
+}
 
+.profile_links > a:hover{
+    font-size: 1.25rem;
+    text-decoration: underline;
+    color: #fefefe;
+    text-shadow: 2px 2px 8px #d4d4d4;
+}
 
+.menu > a:hover{
+    color: #9a5315;
+    font-size: 1.35rem;
+    border: 0.1rem solid #9a5315;
+    padding: 0.3rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    background-color: #fff;
+}
 
+/********  Introduction Heading  *********/
+.mbody{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
+.intro_head{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 3px 0px 2px #ccc;
+    color: #000;
+}
+
+.intro_subhead{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #222;
+    font-style: italic;
+    text-shadow: 2px 0px 1.8px #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.intro_body{
+    font-family: 'Domine', serif;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/************     Startup Cards     **************/
+
+.supcard{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0.5px 0px 8px #ccc;
+}
+
+.supcard img{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem; 
+}
+
+.supcard h5{
+    font-size: 1.5rem;
+    text-shadow: 3px 0px 2px #e5e5e5;
+}
+
+.supcard p{
+    font-size: 1rem;
+    text-shadow: 2px 0px 1.5px #e5e5e5;
+}
+
+.details > .col-4{
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.mdet{
+    text-align: right;
+}
+
+.supcard  a{
+    text-decoration: none;
+    font-family: 'Domine', serif;
+    color: #3b3b3b;
+    font-size: 1rem;
+}
+
+.supcard  a:hover{
+    text-decoration: underline;
+    color: #444;
+    font-size: 1.05rem;
+    text-shadow: 1.5px 0px 1.5px #ccc;
+}
+
+/***********  Previous - Next Buttons  ***********/
+
+.pnbutton{
+    text-align: center;
+}
+
+.pnbutton a{
+    text-decoration: none;
+    color: #e17c23;
+    font-size: 1.2rem;
+    font-family: 'Domine', serif;
+}
+
+.pre{
+    text-align: left;
+}
+
+.nxt{
+    text-align: right;
+}
+
+.pnbutton a:hover{
+    text-shadow: 2px 0px 1.5px #f9e7d6;
+    text-decoration: underline;
+    font-size: 1.25rem;  
+}
+
+/************      Subscribe Now     **************/
+
+.subs{
+    position: fixed;
+    margin: 3rem 3.5rem 5rem 2rem;
+    border-style: solid;
+    border-color: #4d4d4d;
+    border-width: 0.05rem;
+    text-align: center;
+    box-shadow: 3px 3px 8px #e5e5e5;
+}
+
+.subs .card-body{
+    font-family: 'Domine', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subs h5{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #9a5315;
+    text-shadow: 2px 0px 1.5px #f1c39a;
+}
+
+.subs p{
+    color: #e58e41;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subs input{
+    width: 100%;
+    margin-bottom: 1.1rem;
+    color: black;
+    height: 2.5rem;
+    border-style: solid;
+    border-color: #b3b3b3;
+    border-width: 0.05rem;
+    
+}
+
+.subs button{
+    background-color: #6d3b0f;
+    border-color: #5e330d;
+}
+
+.subs button:hover{
+    background-color: #a95b17;
+    border-color: #9a5315;
+    box-shadow: 2px 2px 3px #ccc;
+}
 
 /************  Footer Right  **************/
 
 .footer{
-    background-color: #dfaf3a;
+    background-color: #4c4c4c;
+    background: linear-gradient(to bottom, #191919, #909090);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    border-style: solid; /*for differentiating purpose during development*/
+    color: #fff;
+}
+
+.contact{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.ed-c{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.contact1,
+.contact2,
+.contact3{
+    color: #d4d4d4;
+}
+
+.footer .fa{
+    color: #fff;
+    font-size: 1.3rem;
+    border: 0.1rem solid #fff;
+    padding: 0.3rem;
+    border-radius: 30%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+.footer .fa:hover{
+    color: #000;
+    font-size: 1.35rem;
+    border: 0.1rem solid #000;
+    padding: 0.3rem;
+    border-radius: 30%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    background-color: #fff;
+    text-shadow: 2px 0px 1.5px #888;
 }
