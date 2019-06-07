@@ -8,15 +8,31 @@ body{
     background-color: #fcfcfb;    
 }
 
+.row{
+    width: 100%;
+}
+
+@media (max-width: 765px){
+    
+    .col-12{
+        display: block;
+        margin-left: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+/*.mbody{
+    background-image: url("/assets/logo_bg.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+
 /*********    NavBar   *********/
 
 .navbar{
     background-color: rgba(111, 111, 112,0.8);
     background: linear-gradient(to bottom, rgba(111, 111, 112,0.9), rgba(0,0,0,0));
-}
-
-.row{
-    width: 100%;
 }
 
 .logout{
@@ -40,14 +56,25 @@ body{
     cursor: pointer;         /*not working*/
 }   
 
+@media (max-width: 600px){
+    .logout > a{
+        font-size: 0.9rem;
+    }
+    .logout > a:hover{
+        font-size: 0.95rem;
+    }
+    .logo1{
+        height: 70%;
+    }
+}
 
-/**********    Side Bar Menu   **********/
+/**********    SideBar Menu   **********/
 
 .menu{
     text-align: center;
     padding-top: 5rem;
     background-color: #9a5315;
-    /*background: linear-gradient(to right, #6d3b0f, #f1c39a);*/
+    background: linear-gradient(to bottom, #311b07, #f1c39a);
     box-shadow: 1px 1px 3px #f9e7d6;
     line-height: 2.5rem; 
 }
@@ -104,19 +131,22 @@ body{
     
     .menu{
         padding-top: 1rem;
-        background: linear-gradient(to bottom, #6d3b0f, #f1c39a);
+        background: linear-gradient(to bottom, #311b07, #f1c39a);
     }
     .profile_links{
-        margin-top: 1rem;
+        margin-top: 0.9rem;
     }
     .menu > a{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .menu > .name{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .profile_links > a{
         font-size: 1rem;
+    }
+    .menu > a:hover{
+        font-size: 1.05rem;
     }
 }
 
@@ -237,10 +267,17 @@ body{
     font-size: 1.25rem;  
 }
 
+@media (max-width: 800px){
+    .pnbutton a{
+        font-size: 0.9rem;
+    }
+    .pnbutton a:hover{
+        font-size: 0.95rem;
+    }
+}
 /************      Subscribe Now     **************/
 
 .subs{
-    position: fixed;
     margin: 3rem 3.5rem 50rem 2rem;
     border-style: solid;
     border-color: #4d4d4d;
@@ -258,7 +295,7 @@ body{
 .subs h5{
     font-size: 1.4rem;
     text-align: center;
-    color: #9a5315;
+    color: #311b07;
     text-shadow: 2px 0px 1.5px #f1c39a;
 }
 
@@ -282,16 +319,22 @@ body{
 .subs button{
     background-color: #6d3b0f;
     border-color: #5e330d;
+    width: 100%;
 }
 
 .subs button:hover{
-    background-color: #a95b17;
+    background-color: #4f2b0b;
     border-color: #9a5315;
     box-shadow: 2px 2px 3px #ccc;
 }
 
+@media (max-width: 1000px){
+    .subs{
+        display: none;
+    }
+}
 
-/************  Footer Right  **************/
+/****************   Footer  *****************/
 
 .footer{
     background-color: #4c4c4c;
@@ -299,6 +342,7 @@ body{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     color: #fff;
+    align-content: center;
 }
 
 .contact{
@@ -310,14 +354,17 @@ body{
     font-size: 1.1rem;
     text-align: center;
 }
+
 .footer-right{
     align-content: right;
 }
+
 .contact1,
 .contact2,
 .contact3{
     color: #d4d4d4;
     text-align: left;
+    vertical-align: middle;
 }
 
 .footer .fa{
@@ -329,6 +376,8 @@ body{
     margin-right: 0.5rem;
     text-decoration: none;
     margin-top: 0.5rem;
+    vertical-align: middle;
+    position:relative;
 }
 
 .footer .fa:hover{
@@ -347,7 +396,35 @@ body{
     top-margin: 2.5rem;
 }
 
+.footer-left .logoimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 800px){
+        
+    .logoimg{
+        width:35%;
+    }
+    
+    .contact{
+        font-size: 1rem;
+    }
+       
+    .ed-c{
+        font-size: 0.85rem;
+    }
+    
+    .contact1,
+    .contact2,
+    .contact3{
+        font-size: 0.77rem;
+    }
+
+    .footer .fa{
+        font-size: 1rem;
+    }
     
     .footer-left{
         text-align: center;
